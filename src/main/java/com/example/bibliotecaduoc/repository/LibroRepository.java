@@ -62,7 +62,7 @@ public class LibroRepository {
 
         for(int i = 0;  i < listaLibros.size(); i++){
             if(listaLibros.get(i).getId() == lib.getId()) {
-                id = lib.getId();;
+                id = lib.getId();
                 idPosicion = i;
             }
         }
