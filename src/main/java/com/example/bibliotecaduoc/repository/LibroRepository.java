@@ -10,7 +10,8 @@ import java.util.List;
 public class LibroRepository {
 
     //Arreglo que guarda todos los libros
-    private final List<Libro> listaLibros = new ArrayList<>();
+    private List<Libro> listaLibros = new ArrayList<>();
+    private List<Libro> listaFechas = new ArrayList<>();
 
     public LibroRepository(){
         listaLibros.add(new Libro(2,"9789563494150","Quique Hache: El Mall Embrujado y Itras Historias","Sm Ediciones",2014,"Sergio Gomez"));
@@ -91,15 +92,20 @@ public class LibroRepository {
     }
 
 
-
-
-    //int id = 0;
-    //int idPosicion = 0;
-
-//        for(int i = 0;  i < listaLibros.size(); i++){
-  //      if(listaLibros.get(i).getId() == lib.getId()) {
-    //        id = lib.getId();;
-      //}
+    public Libro agruparFecha(int fechaPublciacion){
+        for(Libro libro : listaFechas){
+            if(fechaPublciacion == fechaPublciacion){
+                listaFechas.add(libro);
+                return libro;
+            }
+        }return null;
+    }
+    //public Libro buscarPorId(int id){
+      //  for(Libro libro : listaLibros){
+        ////      return libro;
+            //}
+        //
+        // return null;
     //}
 
 
