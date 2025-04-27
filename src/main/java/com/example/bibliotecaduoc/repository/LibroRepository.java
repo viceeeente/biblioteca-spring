@@ -10,7 +10,7 @@ import java.util.List;
 public class LibroRepository {
 
     //Arreglo que guarda todos los libros
-    private List<Libro> listaLibros = new ArrayList<>();
+    private final List<Libro> listaLibros = new ArrayList<>();
 
     public LibroRepository(){
         listaLibros.add(new Libro(2,"9789563494150","Quique Hache: El Mall Embrujado y Itras Historias","Sm Ediciones",2014,"Sergio Gomez"));
