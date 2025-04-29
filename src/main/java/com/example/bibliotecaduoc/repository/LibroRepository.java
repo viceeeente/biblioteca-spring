@@ -93,7 +93,6 @@ public class LibroRepository {
 
 
     public List<Libro> agruparPorFecha (int fecha){
-        int f = 0;
         for(Libro libro : listaLibros){
             if(libro.getFechaPublicacion() == fecha){
                 listaFechas.add(libro);
