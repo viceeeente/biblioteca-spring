@@ -44,4 +44,8 @@ public class LibroService {
     public List<Libro> agruparFechas(int fecha){
         return libroRepository.agruparPorFecha(fecha);
     }
+
+    public List<Libro> agruparAutor(String autor){
+        return libroRepository.agruparAutor(autor);
+    }
 }

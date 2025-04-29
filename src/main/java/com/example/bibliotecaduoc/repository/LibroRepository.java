@@ -12,6 +12,7 @@ public class LibroRepository {
     //Arreglo que guarda todos los libros
     private List<Libro> listaLibros = new ArrayList<>();
     private List<Libro> listaFechas = new ArrayList<>();
+    private List<Libro> listaAutor = new ArrayList<>();
 
     public LibroRepository(){
         listaLibros.add(new Libro(2,"9789563494150","Quique Hache: El Mall Embrujado y Itras Historias","Sm Ediciones",2014,"Sergio Gomez"));
@@ -99,13 +100,15 @@ public class LibroRepository {
             }
         }return listaFechas;
     }
-    //public Libro buscarPorId(int id){
-      //  for(Libro libro : listaLibros){
-        ////      return libro;
-            //}
-        //
-        // return null;
-    //}
+
+
+    public List<Libro> agruparAutor (String autor){
+        for(Libro libro : listaLibros){
+            if(libro.getAutor().equals(autor)){
+                listaAutor.add(libro);
+            }
+        }return listaAutor;
+    }
 
 
 }

@@ -55,5 +55,10 @@ public class LibroController {
         return libroService.agruparFechas(fecha);
     }
 
+    @GetMapping("/autor/{autor}")
+    public List<Libro> agruparAutor(@PathVariable String autor){
+        return libroService.agruparAutor(autor);
+    }
+
 
 }
