@@ -41,7 +41,7 @@ public class LibroService {
         return libroRepository.buscarIsbn(isbn);
     }
 
-    public Libro getAgruparFecha(int fechaPublicacion){
-        return libroRepository.agruparFecha(fechaPublicacion);
+    public List<Libro> agruparFechas(int fecha){
+        return libroRepository.agruparPorFecha(fecha);
     }
 }

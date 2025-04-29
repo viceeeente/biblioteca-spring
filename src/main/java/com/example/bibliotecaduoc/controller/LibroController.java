@@ -50,9 +50,9 @@ public class LibroController {
         return libroService.getLibroIsbn(isbn);
     }
 
-    @GetMapping("/fecha/{fechaPublicacion}")
-    public Libro agruparFechas(@PathVariable int fechaPublicacion){
-        return libroService.getAgruparFecha(fechaPublicacion);
+    @GetMapping("/fecha/{fecha}")
+    public List<Libro> agruparFechas(@PathVariable int fecha){
+        return libroService.agruparFechas(fecha);
     }
 
 

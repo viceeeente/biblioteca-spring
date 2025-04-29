@@ -92,13 +92,13 @@ public class LibroRepository {
     }
 
 
-    public Libro agruparFecha(int fechaPublciacion){
-        for(Libro libro : listaFechas){
-            if(fechaPublciacion == fechaPublciacion){
+    public List<Libro> agruparPorFecha (int fecha){
+        int f = 0;
+        for(Libro libro : listaLibros){
+            if(libro.getFechaPublicacion() == fecha){
                 listaFechas.add(libro);
-                return libro;
             }
-        }return null;
+        }return listaFechas;
     }
     //public Libro buscarPorId(int id){
       //  for(Libro libro : listaLibros){
