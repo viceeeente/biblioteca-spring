@@ -60,5 +60,10 @@ public class LibroController {
         return libroService.agruparAutor(autor);
     }
 
+    @GetMapping("/antiguo")
+    public Libro libroAntiguo(@PathVariable String fecha){
+        return libroService.getLibroAntiguo(fecha);
+    }
+
 
 }
